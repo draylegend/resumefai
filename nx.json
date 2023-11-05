@@ -63,14 +63,14 @@
       "style": "scss"
     },
     "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
       "changeDetection": "OnPush",
       "flat": true,
-      "linter": "eslint",
       "prefix": "app",
       "skipModule": true,
       "standalone": true,
-      "style": "scss",
-      "unitTestRunner": "jest"
+      "style": "scss"
     }
   },
   "defaultProject": "angular-client"

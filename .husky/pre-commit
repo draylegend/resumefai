@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+bun nx format
+git add -A
+#bun nx affected:lint
+#bun nx affected:test
+#bun nx affected:e2e

@@ -1,0 +1,23 @@
+<nav>
+  <select (change)="facade.lang.set($any($event.target).value)" name="lang">
+    <option *ngFor="let lang of facade.langs" [value]="lang">{{ lang }}</option>
+  </select>
+</nav>
+
+<section>
+  <h1 contenteditable>Vladimir Drayling</h1>
+  <h2
+    (keyup)="facade.position.set($any($event.target).textContent)"
+    contenteditable
+  >
+    {{ facade.position() }}
+  </h2>
+  <p contenteditable id="description">
+    {{ facade.description() }}
+    <button (click)="facade.generate('description')" contenteditable="false">
+      ✨
+    </button>
+  </p>
+</section>
+
+<section>Experience</section>

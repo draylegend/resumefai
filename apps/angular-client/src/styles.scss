@@ -1,5 +1,29 @@
 html,
 body {
+  display: contents;
   box-sizing: border-box;
   font: 1rem sans-serif;
+  height: 100dvh;
+}
+
+:not([contenteditable='false']):hover {
+  outline: 1px dashed #777;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  color: #c55a0d;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
 }

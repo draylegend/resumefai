@@ -60,7 +60,9 @@
       "e2eTestRunner": "playwright"
     },
     "@nx/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "changeDetection": "OnPush",
+      "standalone": true
     },
     "@nx/angular:library": {
       "linter": "eslint",
@@ -71,6 +73,9 @@
       "skipModule": true,
       "standalone": true,
       "style": "scss"
+    },
+    "@nx/workspace:remove": {
+      "forceRemove": true
     }
   },
   "defaultProject": "angular-client"
